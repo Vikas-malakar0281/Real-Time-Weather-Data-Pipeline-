@@ -1,0 +1,55 @@
+﻿Project Plan,Name,check
+⚡ Spark Streaming Consumer Implementatio (https://www.notion.so/Spark-Streaming-Consumer-Implementatio-24cc89a3b3b880a3a74feef831fbebdc?pvs=21),"• [ ]  Run Streaming Job
+    ◦ Validate processed output",No
+⚡ Spark Streaming Consumer Implementatio (https://www.notion.so/Spark-Streaming-Consumer-Implementatio-24cc89a3b3b880a3a74feef831fbebdc?pvs=21),"• [ ]  Create Spark Streaming Job
+    ◦ Read Kafka topic in real time
+    ◦ Extract relevant fields (temperature, humidity, etc.)
+    ◦ Write transformed data to:
+
+        ▪ Parquet files",No
+🐳 Docker & Environment Setup (https://www.notion.so/Docker-Environment-Setup-24cc89a3b3b88010bfc8f24aa80c8068?pvs=21),"• [ ]  Verify Kafka & Spark are Running
+    ◦ docker ps
+    ◦ Kafka UI or CLI to create test topics",No
+🐳 Docker & Environment Setup (https://www.notion.so/Docker-Environment-Setup-24cc89a3b3b88010bfc8f24aa80c8068?pvs=21),"Phase 2 — Environment Setup
+• [ ]  Write docker-compose.yml
+    ◦ Services: Zookeeper, Kafka, Spark Master, Spark Worker
+    ◦ Network configuration",No
+📊 Dashboard & Visualization (https://www.notion.so/Dashboard-Visualization-24cc89a3b3b880468053c5b2e76abdc7?pvs=21),"• [ ]  Visualization Dashboard
+    ◦ Power BI or Grafana to plot live weather changes
+    ◦ Connect to PostgreSQL or Parquet source",No
+📋 Requirement Gathering & API Setup (https://www.notion.so/Requirement-Gathering-API-Setup-24cc89a3b3b880e2b1d4e4e9ab9010dd?pvs=21),"• [ ]  Set up Ambee Weather API
+    ◦ Sign up and get API key
+    ◦ Read API documentation for city-based weather fetching",No
+📋 Requirement Gathering & API Setup (https://www.notion.so/Requirement-Gathering-API-Setup-24cc89a3b3b880e2b1d4e4e9ab9010dd?pvs=21),"• [ ]  Install Prerequisites
+    ◦ Docker & Docker Compose
+    ◦ Python 3.x
+    ◦ Apache Kafka & Spark knowledge basics",No
+📋 Requirement Gathering & API Setup (https://www.notion.so/Requirement-Gathering-API-Setup-24cc89a3b3b880e2b1d4e4e9ab9010dd?pvs=21),"Phase 1 — Setup & Preparation
+• [ ]  Create GitHub Repository
+    ◦ Repo name: Real-Time-Weather-Pipeline-2025
+    ◦ Add MIT License & http://readme.md/",No
+🔗 Kafka Producer Implementation (https://www.notion.so/Kafka-Producer-Implementation-24cc89a3b3b8800982dcf66936f35081?pvs=21),"• [ ]  Test Producer
+    ◦ Ensure messages are published to Kafka",No
+🔗 Kafka Producer Implementation (https://www.notion.so/Kafka-Producer-Implementation-24cc89a3b3b8800982dcf66936f35081?pvs=21),"• [ ]  Create Kafka Producer (Python)
+    ◦ Fetch weather data from Ambee API (India cities)
+    ◦ Push JSON data to Kafka topic (weather_stream)",No
+🗄 Data Storage Layer (PostgreSQL / BigQuery) (https://www.notion.so/Data-Storage-Layer-PostgreSQL-BigQuery-24cc89a3b3b880f8a54ed438d954a3b8?pvs=21),"• [ ]  Set up Storage
+    ◦ Parquet files in local volume or cloud storage
+    ◦ PostgreSQL for structured queries",No
+🧪 Testing & Optimization (https://www.notion.so/Testing-Optimization-24cc89a3b3b88044abd8cd6c2a0fbc89?pvs=21),"• [ ]  Optimize
+    ◦ Increase Spark workers for scalability
+    ◦ Add more cities to the producer",No
+🧪 Testing & Optimization (https://www.notion.so/Testing-Optimization-24cc89a3b3b88044abd8cd6c2a0fbc89?pvs=21),"• [ ]  Integrate All Services in Docker
+    ◦ Add producer as a container service
+    ◦ Add PostgreSQL service",No
+🚀 Deployment & Documentation (https://www.notion.so/Deployment-Documentation-24cc89a3b3b880359042e93f7f7a7f4c?pvs=21),"• [ ]  Add Notion Documentation
+    ◦ Step-by-step guide
+    ◦ Troubleshooting tips",No
+🚀 Deployment & Documentation (https://www.notion.so/Deployment-Documentation-24cc89a3b3b880359042e93f7f7a7f4c?pvs=21),"Phase 7 — Documentation
+• [ ]  Update http://readme.md/
+    ◦ Architecture diagram
+    ◦ How to run the project
+    ◦ Example output",No
+🚀 Deployment & Documentation (https://www.notion.so/Deployment-Documentation-24cc89a3b3b880359042e93f7f7a7f4c?pvs=21),"• [ ]  Deploy to Cloud (Optional)
+    ◦ Use Google Cloud free tier
+    ◦ Run containers on VM or Kubernetes",No
