@@ -1,9 +1,5 @@
 # 🌦 Real-Time Weather Pipeline 2025
 
-This project is a **Notion-based project plan** for building a **real-time weather data pipeline**.  
-It includes a **Base Plan** table and a **Task** table that are linked through relations and rollups,  
-allowing automatic progress tracking via checkboxes.
-
 ---
 
 ## 📌 Project Overview
