@@ -1,11 +1,13 @@
-# Real-Time-Weather-Pipeline-2025 — Notion Template
+# Notion For Real-Time Weather Pipeline (2025) Project
 
-This is the Notion template for the project.
 
-## How to Import
-1. Download the file `Real-Time-Weather-Pipeline-2025.zip` from this repo.
-2. In Notion, create a new page.
-3. Click the three dots (•••) in the top-right corner.
-4. Select **Import** → Choose the downloaded `.zip` file.
-5. Done — your template will appear in your workspace.
+This Notion project contains:
+- 📋 Base Plan table
+- ✅ Task table with checkbox tracking
+- 🔄 Relations & Rollups for progress tracking
 
+**🌐 Live View:**  
+[View in Notion](https://rainy-pirate-abe.notion.site/Real-Time-Weather-Pipeline-2025-24cc89a3b3b880b0b70ec4f59ac123a1)
+
+**📄 Duplicate & Use as Template:**  
+[Duplicate into your own Notion workspace](https://rainy-pirate-abe.notion.site/Real-Time-Weather-Pipeline-2025-24cc89a3b3b880b0b70ec4f59ac123a1)
