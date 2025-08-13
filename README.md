@@ -47,14 +47,14 @@ cd Real-Time-Weather-Pipeline-2025
 
 ```
 ## 2️⃣ Configure Environment Variables
-  
+``` bash 
 Create a .env file in the project root:
 AMBEE_API_KEY=your_api_key_here
 KAFKA_BROKER=localhost:9092
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 POSTGRES_DB=weatherdb  
-  
+  ```
 ## 3️⃣ Start the Pipeline
 
   ```bash
