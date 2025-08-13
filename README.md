@@ -87,23 +87,3 @@ See the LICENSE file for details.
 Vikas Malakar
 📧 malakarvikas738@gmail.com
 🔗 LinkedIn | GitHub
-
-yaml
-Copy
-Edit
-
----
-
-If you want, I can also **design the architecture diagram & dashboard preview images** so they’re ready to be placed inside  
-`docs/images/` — that way, your README will look instantly professional on GitHub.  
-
-Do you want me to prepare those images for you next?
-
-
-
-
-
-
-
-
-Ask ChatGPT
