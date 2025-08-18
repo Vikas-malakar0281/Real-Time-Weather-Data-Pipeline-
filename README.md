@@ -43,7 +43,7 @@ This project **ingests, processes, and stores live weather and air quality data*
                      |
                Spark Streaming (Docker)
                 ↙                ↘
-   Google Cloud Storage        PostgreSQL (Docker)
+     Google Cloud Storage   PostgreSQL (Docker)
                                    |
                                 Power BI
 
