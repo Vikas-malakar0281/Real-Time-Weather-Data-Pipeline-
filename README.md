@@ -37,7 +37,7 @@ This project **ingests, processes, and stores live weather and air quality data*
 
 ## 🏗️ Pipeline Architecture
 
-            Climbee Weather API
+               Ambee Weather API
                      |
                Kafka Producer (Docker)
                      |
@@ -46,7 +46,7 @@ This project **ingests, processes, and stores live weather and air quality data*
      Google Cloud Storage   PostgreSQL (Docker)
                                    |
                                 Power BI
-🌦️ Climbee Weather API
+🌦️ Ambee Weather API
 
 Role: External data source.
 
