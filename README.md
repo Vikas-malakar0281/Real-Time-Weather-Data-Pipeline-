@@ -159,7 +159,7 @@ docker-compose up
 ```
 
 4️⃣ View the Data
-Connect Power BI / Grafana to the PostgreSQL database to visualize real-time analytics.
+Connect Power BI to the PostgreSQL database to visualize real-time analytics.
 
 
 🤝 Contributing
