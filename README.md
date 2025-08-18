@@ -121,6 +121,9 @@ Why: Makes deployment easier, consistent across dev/prod, and scalable.
 API gives data → Kafka ingests → Spark processes → Postgres stores → Power BI/Grafana visualizes → GCS archives.
 
 Docker glues everything together by running services as containers.
+
+--
+
 ---
 
 ## 🛠️ Tech Stack
