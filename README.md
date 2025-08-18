@@ -46,13 +46,17 @@ This project **ingests, processes, and stores live weather and air quality data*
      Google Cloud Storage   PostgreSQL (Docker)
                                    |
                                 Power BI
-🌦️ Ambee Weather API
+--
 
-Role: External data source.
+### 🌦️ Ambee Weather API
 
-What it does: Provides live weather data (temperature, humidity, wind, etc.).
+- Role: External data source.
 
-⚙️ Kafka Producer
+- What it does: Provides live weather data (temperature, humidity, wind, etc.).
+
+--
+
+### ⚙️ Kafka Producer
 
 Role: Data ingestion layer.
 
@@ -60,7 +64,9 @@ What it does: Collects weather data from the API and pushes it into Kafka topics
 
 Why: Ensures scalability, fault tolerance, and real-time streaming.
 
-🔥 Spark Streaming (Docker)
+--
+
+### 🔥 Spark Streaming (Docker)
 
 Role: Real-time processing engine.
 
@@ -68,7 +74,9 @@ What it does: Reads live data from Kafka, cleans/transforms it (e.g., removing n
 
 Why: Converts raw API data into structured, analytics-ready format.
 
-🐘 PostgreSQL (Docker)
+--
+
+### 🐘 PostgreSQL (Docker)
 
 Role: Structured storage (hot storage).
 
@@ -76,7 +84,9 @@ What it does: Stores processed weather data in relational tables.
 
 Why: Allows Power BI/Grafana to query data efficiently and supports historical analysis.
 
-☁️ Google Cloud Storage
+--
+
+### ☁️ Google Cloud Storage
 
 Role: Backup/archival storage (cold storage).
 
@@ -84,7 +94,9 @@ What it does: Stores raw or batch data for long-term use.
 
 Why: Useful for ML models, auditing, or reprocessing data later.
 
-📊 Power BI / Grafana
+--
+
+### 📊 Power BI 
 
 Role: Visualization layer.
 
@@ -92,7 +104,9 @@ What it does: Connects to PostgreSQL and builds real-time dashboards & reports.
 
 Why: Provides insights to end-users (trends, alerts, KPIs).
 
-🐳 Docker
+--
+
+### 🐳 Docker
 
 Role: Containerization platform.
 
@@ -100,7 +114,9 @@ What it does: Runs Kafka, Spark, and PostgreSQL in isolated, reproducible enviro
 
 Why: Makes deployment easier, consistent across dev/prod, and scalable.
 
-⚡ In short:
+--
+
+### ⚡ In short:
 
 API gives data → Kafka ingests → Spark processes → Postgres stores → Power BI/Grafana visualizes → GCS archives.
 
