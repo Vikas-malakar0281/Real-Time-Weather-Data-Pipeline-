@@ -46,7 +46,65 @@ This project **ingests, processes, and stores live weather and air quality data*
      Google Cloud Storage   PostgreSQL (Docker)
                                    |
                                 Power BI
+🌦️ Climbee Weather API
 
+Role: External data source.
+
+What it does: Provides live weather data (temperature, humidity, wind, etc.).
+
+⚙️ Kafka Producer
+
+Role: Data ingestion layer.
+
+What it does: Collects weather data from the API and pushes it into Kafka topics for streaming.
+
+Why: Ensures scalability, fault tolerance, and real-time streaming.
+
+🔥 Spark Streaming (Docker)
+
+Role: Real-time processing engine.
+
+What it does: Reads live data from Kafka, cleans/transforms it (e.g., removing nulls, converting units, aggregating).
+
+Why: Converts raw API data into structured, analytics-ready format.
+
+🐘 PostgreSQL (Docker)
+
+Role: Structured storage (hot storage).
+
+What it does: Stores processed weather data in relational tables.
+
+Why: Allows Power BI/Grafana to query data efficiently and supports historical analysis.
+
+☁️ Google Cloud Storage
+
+Role: Backup/archival storage (cold storage).
+
+What it does: Stores raw or batch data for long-term use.
+
+Why: Useful for ML models, auditing, or reprocessing data later.
+
+📊 Power BI / Grafana
+
+Role: Visualization layer.
+
+What it does: Connects to PostgreSQL and builds real-time dashboards & reports.
+
+Why: Provides insights to end-users (trends, alerts, KPIs).
+
+🐳 Docker
+
+Role: Containerization platform.
+
+What it does: Runs Kafka, Spark, and PostgreSQL in isolated, reproducible environments.
+
+Why: Makes deployment easier, consistent across dev/prod, and scalable.
+
+⚡ In short:
+
+API gives data → Kafka ingests → Spark processes → Postgres stores → Power BI/Grafana visualizes → GCS archives.
+
+Docker glues everything together by running services as containers.
 ---
 
 ## 🛠️ Tech Stack
