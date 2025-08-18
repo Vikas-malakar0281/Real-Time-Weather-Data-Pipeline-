@@ -175,4 +175,5 @@ This project is licensed under the MIT License – see the LICENSE file for deta
 
 Vikas Malakar
 📧 malakarvikas738@gmail.com
-🔗 LinkedIn | GitHub
+🔗 LinkedIn https://www.linkedin.com/in/vikas-malakar-5a9446354/ |
+ GitHub: https://github.com/Vikas-malakar0281/
