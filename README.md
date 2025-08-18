@@ -58,69 +58,69 @@ This project **ingests, processes, and stores live weather and air quality data*
 
 ### ⚙️ Kafka Producer
 
-Role: Data ingestion layer.
+- Role: Data ingestion layer.
 
-What it does: Collects weather data from the API and pushes it into Kafka topics for streaming.
+- What it does: Collects weather data from the API and pushes it into Kafka topics for streaming.
 
-Why: Ensures scalability, fault tolerance, and real-time streaming.
+- Why: Ensures scalability, fault tolerance, and real-time streaming.
 
 --
 
 ### 🔥 Spark Streaming (Docker)
 
-Role: Real-time processing engine.
+- Role: Real-time processing engine.
 
-What it does: Reads live data from Kafka, cleans/transforms it (e.g., removing nulls, converting units, aggregating).
+- What it does: Reads live data from Kafka, cleans/transforms it (e.g., removing nulls, converting units, aggregating).
 
-Why: Converts raw API data into structured, analytics-ready format.
+- Why: Converts raw API data into structured, analytics-ready format.
 
 --
 
 ### 🐘 PostgreSQL (Docker)
 
-Role: Structured storage (hot storage).
+- Role: Structured storage (hot storage).
 
-What it does: Stores processed weather data in relational tables.
+- What it does: Stores processed weather data in relational tables.
 
-Why: Allows Power BI/Grafana to query data efficiently and supports historical analysis.
+- Why: Allows Power BI/Grafana to query data efficiently and supports historical analysis.
 
 --
 
 ### ☁️ Google Cloud Storage
 
-Role: Backup/archival storage (cold storage).
+- Role: Backup/archival storage (cold storage).
 
-What it does: Stores raw or batch data for long-term use.
+- What it does: Stores raw or batch data for long-term use.
 
-Why: Useful for ML models, auditing, or reprocessing data later.
+- Why: Useful for ML models, auditing, or reprocessing data later.
 
 --
 
 ### 📊 Power BI 
 
-Role: Visualization layer.
+- Role: Visualization layer.
 
-What it does: Connects to PostgreSQL and builds real-time dashboards & reports.
+- What it does: Connects to PostgreSQL and builds real-time dashboards & reports.
 
-Why: Provides insights to end-users (trends, alerts, KPIs).
+- Why: Provides insights to end-users (trends, alerts, KPIs).
 
 --
 
 ### 🐳 Docker
 
-Role: Containerization platform.
+- Role: Containerization platform.
 
-What it does: Runs Kafka, Spark, and PostgreSQL in isolated, reproducible environments.
+- What it does: Runs Kafka, Spark, and PostgreSQL in isolated, reproducible environments.
 
-Why: Makes deployment easier, consistent across dev/prod, and scalable.
+- Why: Makes deployment easier, consistent across dev/prod, and scalable.
 
 --
 
 ### ⚡ In short:
 
-API gives data → Kafka ingests → Spark processes → Postgres stores → Power BI/Grafana visualizes → GCS archives.
+- API gives data → Kafka ingests → Spark processes → Postgres stores → Power BI/Grafana visualizes → GCS archives.
 
-Docker glues everything together by running services as containers.
+- Docker glues everything together by running services as containers.
 
 --
 
