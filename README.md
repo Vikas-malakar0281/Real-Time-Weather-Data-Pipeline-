@@ -46,6 +46,7 @@ This project **ingests, processes, and stores live weather and air quality data*
      Google Cloud Storage   PostgreSQL (Docker)
                                    |
                                 Power BI
+![architecture-diagram](vikas-malakar0281/Real-Time-Weather-Data-Pipeline-/docs/Images/architecture-diagram.png)
 --
 
 ### 🌦️ Ambee Weather API
