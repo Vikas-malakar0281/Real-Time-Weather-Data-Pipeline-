@@ -129,9 +129,10 @@ This project **ingests, processes, and stores live weather and air quality data*
 ## 🛠️ Tech Stack
 
 - **Languages:** Python  
-- **Streaming:** Apache Kafka, Spark Streaming  
-- **Database:** PostgreSQL / Data Lake  
-- **Visualization:** Power BI / Grafana  
+- **Streaming:** Apache Kafka, Spark Streaming
+- **GCS** 
+- **Database:** PostgreSQL 
+- **Visualization:** Power BI 
 - **Deployment:** Docker & Docker Compose  
 
 ---
