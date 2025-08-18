@@ -36,9 +36,16 @@ This project **ingests, processes, and stores live weather and air quality data*
 ---
 
 ## 🏗️ Pipeline Architecture
-Ambee API → Kafka Producer → Kafka Topic → Spark Streaming → PostgreSQL / Data Lake → Visualization Dashboard
 
-![Pipeline Architecture](docs/pipeline-diagram.png)  <!-- Add your diagram in /docs -->
+            Climbee Weather API
+                     |
+               Kafka Producer (Docker)
+                     |
+               Spark Streaming (Docker)
+                ↙                ↘
+   Google Cloud Storage        PostgreSQL (Docker)
+                                   |
+                                Power BI
 
 ---
 
